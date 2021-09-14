@@ -42,7 +42,7 @@ void WriteFile(const string filename, vector<string>& words){
         cout << "ファイルオープン失敗" << endl;
     }
     int num_words = (int)words.size();
-    for(int i = 0; i < num_words; i++){
+    for (int i = 0; i < num_words; i++) {
         write_file_stream << words[i] << endl;
     }
     write_file_stream.close();
